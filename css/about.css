@@ -1,0 +1,143 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Navbar */
+.navbar {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: lightblue;
+  font-size: 24px;
+}
+.skill {
+  text-align:justify;
+  padding: 50px;
+  background-color: rgb(229, 254, 0);
+}
+/* Projects Section */
+.projects {
+  padding: 50px;
+  background-color: lightgray;
+}
+
+/* About Section */
+.about {
+  padding: 50px;
+  background-color: lightgreen;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px;
+  background-color: lightyellow;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.responsive .navbar-toggle {
+  display: block;
+  text-align: right;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-links img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contact-links img:hover {
+  opacity: 0.8;
+}
