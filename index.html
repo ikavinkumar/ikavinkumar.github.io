@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="images/IMG_20211217_072410_987~2.jpg" alt="Profile Picture">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_cacheOverride=1688842358419">
+  <link rel="icon" type="image/x-icon" href="images/logo.jpg" alt="Profile Picture">
   <link rel="stylesheet" href="about.css">
-  <!-- <script src="about.js"></script> -->
+  <script src="index.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="navbar">
-        <li><a href="#hero-jump">Home</a></li>
-        <li><a href="#skill-jump">Skills</a></li>
-        <li><a href="#projects-jump">Projects</a></li>
-        <li><a href="#about-jump">About</a></li>
-        <li><a href="#contact-jump">Contact</a></li>
-      </ul>
+  
+    <nav class="navbar">
+      <div class="main-nav-bar">
+        <a href="#" id="home">
+          <img src="images/logo.jpg" width="40px" height="40px">
+        </a>
+        <a href="javascript:void(0);" onclick="toggleBar()" id="nav-tog-icon">
+          <img src="images/list.png" alt="" id="list-icon">
+        </a>
+      </div>
+      <div id="nav-links">
+        <a href="#hero-jump" class="nav-link">Home</a>
+        <a href="#skill-jump" class="nav-link">Skills</a>
+        <a href="#projects-jump" class="nav-link">Projects</a>
+        <a href="#about-jump" class="nav-link">About</a>
+        <a href="#contact-jump" class="nav-link">Contact</a>
+      </div>
     </nav>
-  </header>
+ 
   
   <main>
     <section class="hero" id="hero-jump">
