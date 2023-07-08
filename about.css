@@ -5,17 +5,55 @@ body, h1, h2, p, ul, li {
 }
 
 /* Responsive Navbar */
-.navbar {
-  display: flex;
-  list-style: none;
-  background-color: #333;
-  justify-content: space-evenly;
-  padding: 10px;
+
+.nav-bar {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: sticky;
+  width: 100%;
 }
 
-.navbar li a {
-  color: white;
-  text-decoration: none;
+.main-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+
+
+
+#list-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-links {
+  display: none;
+}
+
+
+#nav-links a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  align-items: left;
+  font-size: 1rem;
+  color: goldenrod;
+  font-weight: bold;
+}
+
+#about-me-para {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  text-indent: 5rem;
+  color: antiquewhite;
 }
 
 /* Hero Section */
@@ -54,27 +92,6 @@ footer {
   padding: 20px;
   background-color: #333;
   color: white;
-}
-
-.navbar-toggle {
-  display: none;
-}
-
-.responsive .navbar-toggle {
-  display: block;
-  text-align: right;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
 }
 
 .project-card {
@@ -140,4 +157,75 @@ footer {
 
 .contact-links img:hover {
   opacity: 0.8;
+}
+
+.sec-heading {
+  color: var(--txt-col0);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--leet-head);
+}
+
+.out-sec {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+
+
+  scroll-behavior: smooth;
+
+
+  /* Gold Pallets */
+  --col1: #050505;
+  --col2: #0f0e0c;
+  --col3: #755b00;
+  --col4: #d7a920;
+  --col5: #d1b200;
+  --col6: #e1d75b;
+
+  /* Text Colors */
+  --txt-col0: orange;
+  --txt-col1: #ab79d6;
+
+  /* BG Colors */
+  --bg-col1: rgb(34, 35, 44);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+
+  /* Font styles*/
+  --leet-head: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --leet-exp: Menlo, Monaco, Consolas;
+  --leet-txt-editor: Consolas, "Courier New", monospace;
+}
+
+
+body {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-width: 350px;
+  background-color: rgb(34, 35, 44);
+  color: white;
+  align-items: center;
+  line-height: 1.5rem;
+  color: black;
+  margin-bottom: 0;
+  font-family: var(--leet-exp);
+}
+
+a {
+  font-size: repeat(4, minmax(0, 1fr));
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  border-color: var(--col5);
 }
