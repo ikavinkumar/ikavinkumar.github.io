@@ -9,8 +9,5 @@ const toggleBar = () => {
         navTog.style.flexDirection = "column";
         listIcon.src = "images/close.png"
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> b70286db2820ec7a73297c9cd6e94d383ce9a954
